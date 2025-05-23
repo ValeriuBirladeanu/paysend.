@@ -44,4 +44,3 @@ def pytest_runtest_makereport(item):
                 name=f"{test_name}_screenshot",
                 attachment_type=allure.attachment_type.PNG
             )
-
