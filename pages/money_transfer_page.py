@@ -49,6 +49,8 @@ class SendMoneyPage(BasePage):
         except TimeoutError:
             print("[INFO] No currency dropdown appeared. Moving on...")
 
+        self.wait_after_selection()
+
         return selected_option, selected_currency
 
     @allure.step("Select random SEND country and currency")
