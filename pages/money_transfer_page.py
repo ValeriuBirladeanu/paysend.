@@ -5,7 +5,7 @@ from pages.base_page import BasePage
 from playwright.sync_api import expect
 
 
-class PaysendPage(BasePage):
+class SendMoneyPage(BasePage):
     def __init__(self, page):
         super().__init__(page)
         self.url = "https://paysend.com"
